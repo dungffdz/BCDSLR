@@ -1,7 +1,7 @@
 --[[
 
 Open source
-Made by !vcsk0#1516
+Made by !BCD
 Credits to me
 
 Credits to the Owner Who Made The ESP Script
@@ -31,7 +31,7 @@ getgenv().TPWalk = false
 
 --// UI
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/UI-Library/main/Source/MyUILib(Unamed).lua"))();
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/dungffdz/BCDSLR/main/BANGCHU/daica"))();
 local Window = Library:Create("Hitbox Expander")
 
 local ToggleGui = Instance.new("ScreenGui")
@@ -139,7 +139,7 @@ PlayerTab:Toggle("Loop WalkSpeed", function(state)
     game:GetService("RunService").Heartbeat:Connect(function()
         if loopW == true then
             pcall(function()
-                game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = Walkspeed
+                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = WalkSpeed
             end)
         end
     end)
@@ -157,7 +157,7 @@ PlayerTab:Toggle("Loop JumpPower", function(state)
     game:GetService("RunService").Heartbeat:Connect(function()
         if loopJ == true then
             pcall(function()
-                game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = Jumppower
+                game.Players.LocalPlayer.Character.Humanoid.JumpPower = JumpPower
             end)
         end
     end)
@@ -224,7 +224,7 @@ getgenv().outlinecolor = Color3.new(1, 1, 1) --Change outline color, no need to 
 getgenv().filltrans = 0.5 --Change fill transparency
 getgenv().outlinetrans = 0.5 --Change outline transparency
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/main/Highlight-ESP.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dungffdz/BCDSLR/main/BANGCHU/esp%20fake"))()
 end)
 
 if game.PlaceId == 3082002798 then

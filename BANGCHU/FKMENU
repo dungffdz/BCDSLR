@@ -162,7 +162,16 @@ PlayerTab:Toggle("Loop JumpPower", function(state)
         end
     end)
 end)
-
+PlayerTab:Toggle("ESP ANH DŨNG VIP PRO", function(state)
+    getgenv().loopJ = state
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if loopJ == true then
+            pcall(function()
+               loadstring(game:HttpGet("https://raw.githubusercontent.com/dungffdz/BCDSLR/main/BANGCHU/espv2bangchuvip"))()
+            end)
+        end
+    end)
+end)
 PlayerTab:TextBox("TP Speed", function(value)
 getgenv().TPSpeed = value
 end)

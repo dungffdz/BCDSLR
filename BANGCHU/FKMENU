@@ -173,12 +173,70 @@ PlayerTab:Toggle("ESP ANH DŨNG VIP PRO", function(state)
     end)
 end)
 
-PlayerTab:Toggle("Menu Fram (có key tự get con mẹ m)", function(state)
+PlayerTab:Toggle("Menu Fram (có key tự get con mẹ m"lúc mở được lúc dell mở dc")", function(state)
     getgenv().loopJ = state
     game:GetService("RunService").Heartbeat:Connect(function()
         if loopJ == true then
             pcall(function()
                loadstring(game:HttpGet("https://raw.githubusercontent.com/dungffdz/BCDSLR/main/BANGCHU/menufram.lua"))()
+            end)
+        end
+    end)
+end)
+PlayerTab:Toggle("Menu Fram 2 (có thể bị kick khỏi sv dùng được thì ngon)", function(state)
+    getgenv().loopJ = state
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if loopJ == true then
+            pcall(function()
+               
+getgenv().Team = "Marines"
+getgenv().FixCrash = true -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
+getgenv().FixCrash2 = true -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
+getgenv().AutoLoad = true --Will Load Script On Server Hop
+getgenv().SlowLoadUi  = true
+getgenv().ForceUseSilentAimDashModifier = false --Force turn on silent aim , if error then executor problem
+getgenv().ForceUseWalkSpeedModifier = false --Force turn on Walk Speed Modifier , if error then executor problem
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+            end)
+        end
+    end)
+end)
+PlayerTab:Toggle("Menu Fram 3 ("lúc mở được lúc dell mở dc")", function(state)
+    getgenv().loopJ = state
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if loopJ == true then
+            pcall(function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
+            end)
+        end
+    end)
+end)
+PlayerTab:Toggle("Menu Fram 4 ("lúc mở được lúc dell mở dc")", function(state)
+    getgenv().loopJ = state
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if loopJ == true then
+            pcall(function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+            end)
+        end
+    end)
+end)
+PlayerTab:Toggle("Menu Fram 5 ("lúc mở được lúc dell mở dcC")", function(state)
+    getgenv().loopJ = state
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if loopJ == true then
+            pcall(function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/pokelok/yagoX/main/main"))()
+            end)
+        end
+    end)
+end)
+PlayerTab:Toggle("Menu Fram 6 ("lúc mở được lúc dell mở dc")", function(state)
+    getgenv().loopJ = state
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if loopJ == true then
+            pcall(function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
             end)
         end
     end)

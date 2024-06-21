@@ -1,7 +1,7 @@
 --[[
 
 Open source
-Made by !BCS
+Made by !vcsk0#1516
 Credits to me
 
 Credits to the Owner Who Made The ESP Script
@@ -62,7 +62,7 @@ local HomeTab = Window:Tab("Home","rbxassetid://10888331510")
 local PlayerTab = Window:Tab("Players","rbxassetid://12296135476")
 local VisualTab = Window:Tab("Visuals","rbxassetid://12308581351")
 
-HomeTab:InfoLabel("Anh Dũng Đẹp ZAi VCL")
+HomeTab:InfoLabel("only works on some games!")
 
 HomeTab:Section("Settings")
 
@@ -139,7 +139,7 @@ PlayerTab:Toggle("Loop WalkSpeed", function(state)
     game:GetService("RunService").Heartbeat:Connect(function()
         if loopW == true then
             pcall(function()
-                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = WalkSpeed
+                game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Walkspeed
             end)
         end
     end)
@@ -157,27 +157,17 @@ PlayerTab:Toggle("Loop JumpPower", function(state)
     game:GetService("RunService").Heartbeat:Connect(function()
         if loopJ == true then
             pcall(function()
-                game.Players.LocalPlayer.Character.Humanoid.JumpPower = JumpPower
+                game.Players.LocalPlayer.Character.Humanoid.JumpPower = Jumppower
             end)
         end
     end)
 end)
-PlayerTab:Toggle("ESP ANH DŨNG VIP PRO", function(state)
+PlayerTab:Toggle("ESP ANH DŨNG", function(state)
     getgenv().loopJ = state
     game:GetService("RunService").Heartbeat:Connect(function()
         if loopJ == true then
             pcall(function()
-               loadstring(game:HttpGet("https://raw.githubusercontent.com/dungffdz/BCDSLR/main/BANGCHU/espv2bangchuvip"))()
-            end)
-        end
-    end)
-end)
-PlayerTab:Toggle("Menu Fram (có key tự get con mẹ m"lúc mở được lúc dell mở dc")", function(state)
-    getgenv().loopJ = state
-    game:GetService("RunService").Heartbeat:Connect(function()
-        if loopJ == true then
-            pcall(function()
-               loadstring(game:HttpGet("https://raw.githubusercontent.com/dungffdz/BCDSLR/main/BANGCHU/menufram.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/dungffdz/BCDSLR/main/BANGCHU/espv2bangchuvip"))()
             end)
         end
     end)
@@ -206,7 +196,7 @@ while getgenv().TPWalk and hb:Wait() and chr and hum and hum.Parent do
 end
 end)
 
-PlayerTab:Slider("Fov", game.Workspace.CurrentCamera.FieldOfView,120, function(v)
+PlayerTab:Slider("Fov", game.Workspace.CurrentCamera.FieldOfView,360, function(v)
      game.Workspace.CurrentCamera.FieldOfView = v
 end)
 

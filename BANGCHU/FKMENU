@@ -274,46 +274,7 @@ if game.PlaceId == 3082002798 then
 		    if v:IsA('ModuleScript') then
 			    local Module = require(v)
 				Module.DEBOUNCE = 0
-PlayerTab:Toggle("Menu Fram 3 ("lúc mở được lúc dell mở dc")", function(state)
-    getgenv().loopJ = state
-    game:GetService("RunService").Heartbeat:Connect(function()
-        if loopJ == true then
-            pcall(function()
-              loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
-            end)
-        end
-    end)
-end)
-PlayerTab:Toggle("Menu Fram 4 ("lúc mở được lúc dell mở dc")", function(state)
-    getgenv().loopJ = state
-    game:GetService("RunService").Heartbeat:Connect(function()
-        if loopJ == true then
-            pcall(function()
-              loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
-            end)
-        end
-    end)
-end)
-PlayerTab:Toggle("Menu Fram 5 ("lúc mở được lúc dell mở dcC")", function(state)
-    getgenv().loopJ = state
-    game:GetService("RunService").Heartbeat:Connect(function()
-        if loopJ == true then
-            pcall(function()
-              loadstring(game:HttpGet("https://raw.githubusercontent.com/pokelok/yagoX/main/main"))()
-            end)
-        end
-    end)
-end)
-PlayerTab:Toggle("Menu Fram 6 ("lúc mở được lúc dell mở dc")", function(state)
-    getgenv().loopJ = state
-    game:GetService("RunService").Heartbeat:Connect(function()
-        if loopJ == true then
-            pcall(function()
-              loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
-            end)
-        end
-    end)
-end)
+
 			end
 		end
 	end)

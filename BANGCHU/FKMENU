@@ -1,7 +1,7 @@
 --[[
 
 Open source
-Made by !vcsk0#1516
+Made by BCD!
 Credits to me
 
 Credits to the Owner Who Made The ESP Script
@@ -168,6 +168,16 @@ PlayerTab:Toggle("ESP ANH DŨNG", function(state)
         if loopJ == true then
             pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/dungffdz/BCDSLR/main/BANGCHU/espv2bangchuvip"))()
+            end)
+        end
+    end)
+end)
+PlayerTab:Toggle("MENU FRAM(NHƯ CAC)", function(state)
+    getgenv().loopJ = state
+    game:GetService("RunService").Heartbeat:Connect(function()
+        if loopJ == true then
+            pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Scriptssz/Folder_Script/main/Valk_Hub"))()
             end)
         end
     end)

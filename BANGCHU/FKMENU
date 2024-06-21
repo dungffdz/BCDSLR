@@ -173,16 +173,7 @@ PlayerTab:Toggle("ESP ANH DŨNG VIP PRO", function(state)
     end)
 end)
 
-PlayerTab:Toggle("Menu Fram (có key tự get con mẹ m"lúc mở được lúc dell mở dc")", function(state)
-    getgenv().loopJ = state
-    game:GetService("RunService").Heartbeat:Connect(function()
-        if loopJ == true then
-            pcall(function()
-               loadstring(game:HttpGet("https://raw.githubusercontent.com/dungffdz/BCDSLR/main/BANGCHU/menufram.lua"))()
-            end)
-        end
-    end)
-end)
+
 
 PlayerTab:TextBox("TP Speed", function(value)
 getgenv().TPSpeed = value
@@ -206,7 +197,7 @@ while getgenv().TPWalk and hb:Wait() and chr and hum and hum.Parent do
 end
 end)
 
-PlayerTab:Slider("Fov", game.Workspace.CurrentCamera.FieldOfView,120, function(v)
+PlayerTab:Slider("Fov", game.Workspace.CurrentCamera.FieldOfView,390, function(v)
      game.Workspace.CurrentCamera.FieldOfView = v
 end)
 
